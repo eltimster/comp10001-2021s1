@@ -1,7 +1,7 @@
 # comp10001-2021s1
 Test cases for Project 2 of COMP10001 (2021s1)
 
-## How to use GITHUB for Project 3:
+## How to use GITHUB for Project 2:
 
 To use github in the most basic sense you can either download the whole package of files using the button to the right marked "Download", or unpack into your local directory. You do not need an account to do this.
 
