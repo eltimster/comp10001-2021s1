@@ -143,17 +143,17 @@ test_cases = {
 
     ],
 
-    # "phazed_score":
-    # [
-    #     ("""submission.phazed_score(['9D', '9S', '9D', '0D', '0S', '0D'])""", 57), 
-    #     ("""submission.phazed_score(['2D', '9S', 'AD', '0D'])""", 46), 
-    #     ("""submission.phazed_score([])""", 0), 
-    # ],
+    "phazed_score":
+    [
+        ("""submission.phazed_score(['9D', '9S', '9D', '0D', '0S', '0D'])""", 57), 
+        ("""submission.phazed_score(['2D', '9S', 'AD', '0D'])""", 46), 
+        ("""submission.phazed_score([])""", 0), 
+    ],
 
-    # "phazed_play":
-    # [
-    #     # can only discard final card
-    #     ("""submission.phazed_play(1, [(None, []), (4, [['2C', '3H', '4D', 'AD', '6S', '7C', '8S', '9H', '0S', 'JS']]), (None, []), (None, [])], [(0, [(1, 'XX'), (5, 'JS')]), (1, [(2, 'JS'), (3, [['2C', '3H', '4D', 'AD', '6S', '7C', '8S', '9H']]), (4, ('0S', (1, 0, 8))), (4, ('JS', (1, 0, 9)))])], [0, 4, 0, 0], ['5D'], '7H')""", (5, '5D')),
-    # ]
+    "phazed_play":
+    [
+        # can only discard final card
+        ("""submission.phazed_play(1, [(None, []), (5, [['2C', '3H', '4D', 'AD', '6S', '7C', '8S', '9H', '0S', 'JS']]), (None, []), (None, [])], [(0, [(1, 'XX'), (5, 'JS')]), (1, [(2, 'JS'), (3, (5, [['2C', '3H', '4D', 'AD', '6S', '7C', '8S', '9H']])), (4, ('0S', (1, 0, 8))), (4, ('JS', (1, 0, 9)))])], [0, 5, 0, 0], ['5D'], '7H')""", (5, '5D')),
+    ]
 
 }
