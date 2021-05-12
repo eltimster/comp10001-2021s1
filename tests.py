@@ -134,11 +134,11 @@ test_cases = {
         # play Phase 3
         ("""submission.phazed_is_valid_play((3, (3, [['2C', 'KH', 'QS', '7H'], ['3H', '7S', '0D', 'KD', 'AD']])), 0, [(None, []), (None, []), (None, []), (None, [])], [(0, [(1, 'XX')])], [2, 0, 0, 0], ['2C', 'KH', 'QS', '7H', '3H', '7S', '0D', 'KD', 'AD', 'JS', '0H'], 'KC')""", True),
         # play card on phase 3 (accumulation)
-        ("""submission.phazed_is_valid_play((4, ('JS', (0, 0, 4))), 0, [(3, [['2C', 'KH', 'QS', '7H'], ['3H', '7S', '0D', 'KD', 'AD']]), (None, []), (None, []), (None, [])], [(0, [(1, 'XX'), (3, (3, [['2C', 'KH', 'QS', '7H'], ['3H', '7S', '0D', 'KD', 'AD']]))])], [2, 0, 0, 0], ['JS', '0H'], 'KC')""", True),
+        ("""submission.phazed_is_valid_play((4, ('JS', (0, 0, 4))), 0, [(3, [['2C', 'KH', 'QS', '7H'], ['3H', '7S', '0D', 'KD', 'AD']]), (None, []), (None, []), (None, [])], [(0, [(1, 'XX'), (3, (3, [['2C', 'KH', 'QS', '7H'], ['3H', '7S', '0D', 'KD', 'AD']]))])], [3, 0, 0, 0], ['JS', '0H'], 'KC')""", True),
         # play card on phase 3 (accumulation)
-        ("""submission.phazed_is_valid_play((4, ('0H', (0, 0, 5))), 0, [(3, [['2C', 'KH', 'QS', '7H', 'JS'], ['3H', '7S', '0D', 'KD', 'AD']]), (None, []), (None, []), (None, [])], [(0, [(1, 'XX'), (3, (3, [['2C', 'KH', 'QS', '7H'], ['3H', '7S', '0D', 'KD', 'AD']])), (4, ('JS', (0, 0, 4)))])], [2, 0, 0, 0], ['0H'], 'KC')""", True),
+        ("""submission.phazed_is_valid_play((4, ('0H', (0, 0, 5))), 0, [(3, [['2C', 'KH', 'QS', '7H', 'JS'], ['3H', '7S', '0D', 'KD', 'AD']]), (None, []), (None, []), (None, [])], [(0, [(1, 'XX'), (3, (3, [['2C', 'KH', 'QS', '7H'], ['3H', '7S', '0D', 'KD', 'AD']])), (4, ('JS', (0, 0, 4)))])], [3, 0, 0, 0], ['0H'], 'KC')""", True),
         # INVALID attempt to discard without "completing" accumulation
-        ("""submission.phazed_is_valid_play((5, '0H'), 0, [(3, [['2C', 'KH', 'QS', '7H', 'JS'], ['3H', '7S', '0D', 'KD', 'AD']]), (None, []), (None, []), (None, [])], [(0, [(1, 'XX'), (3, (3, [['2C', 'KH', 'QS', '7H'], ['3H', '7S', '0D', 'KD', 'AD']])), (4, ('JS', (0, 0, 4)))])], [2, 0, 0, 0], ['0H'], 'KC')""", False),
+        ("""submission.phazed_is_valid_play((5, '0H'), 0, [(3, [['2C', 'KH', 'QS', '7H', 'JS'], ['3H', '7S', '0D', 'KD', 'AD']]), (None, []), (None, []), (None, [])], [(0, [(1, 'XX'), (3, (3, [['2C', 'KH', 'QS', '7H'], ['3H', '7S', '0D', 'KD', 'AD']])), (4, ('JS', (0, 0, 4)))])], [3, 0, 0, 0], ['0H'], 'KC')""", False),
         
 
     ],
