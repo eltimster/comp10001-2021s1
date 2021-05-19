@@ -108,7 +108,7 @@ test_cases = {
         # INVALID attempt to place card on own phase (wrong suit)
         ("""submission.phazed_is_valid_play((4, ('KC', (1, 0, 0))), 1, [(None, []), (2, [['2S', '2S', 'AS', '5S', '5S', '7S', 'JS']]), (None, []), (None, [])], [(0, [(1, 'XX'), (5, 'JS')]), (1, [(2, 'JS'), (3, (2, [['2S', '2S', 'AS', '5S', '5S', '7S', 'JS']]))])], [0, 2, 0, 0], ['5D', '0S', 'JS', 'KC'], 'KC')""", False),
         # place card on own phase (set of four)
-        ("""submission.phazed_is_valid_play((4, ('5D', (1, 1, 0))), 1, [(None, []), (4, [['2S', '2S', '2C', '2H'], ['AS', '5S', '5S', '5H']]), (None, []), (None, [])], [(0, [(1, 'XX'), (5, 'JS')]), (1, [(2, 'JS'), (3, (4, [['2S', '2S', '2C', '2H'], ['AS', '5S', '5S', '5H']]))])], [0, 3, 0, 0], ['5D', '0S', 'JS'], 'KC')""", True),
+        ("""submission.phazed_is_valid_play((4, ('5D', (1, 1, 0))), 1, [(None, []), (4, [['2S', '2S', '2C', '2H'], ['AS', '5S', '5S', '5H']]), (None, []), (None, [])], [(0, [(1, 'XX'), (5, 'JS')]), (1, [(2, 'JS'), (3, (4, [['2S', '2S', '2C', '2H'], ['AS', '5S', '5S', '5H']]))])], [0, 4, 0, 0], ['5D', '0S', 'JS'], 'KC')""", True),
         # INVALID attempt to place card on own phase (index incorrect)
         ("""submission.phazed_is_valid_play((4, ('AD', (1, 0, 4))), 1, [(None, []), (1, [['2S', '2S', '2C'], ['AS', '5S', '5S']]), (None, []), (None, [])], [(0, [(1, 'XX'), (5, 'JS')]), (1, [(2, 'JS'), (3, (1, [['2S', '2S', '2C'], ['AS', '5S', '5S']]))])], [0, 1, 0, 0], ['AD', '8S', '9S', '0S', 'JS'], 'KC')""", False),
         # INVALID attempt to place card on own phase (group ID incorrect)
