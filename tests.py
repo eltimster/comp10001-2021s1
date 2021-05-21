@@ -93,7 +93,7 @@ test_cases = {
         # INVALID attempt to play Phase 1 (as already on Phase 2)
         ("""submission.phazed_is_valid_play((3, (1, [['2S', '2S', '2C'], ['AS', '5S', '5S']])), 0, [(None, []), (None, []), (None, []), (None, [])], [(0, [(1, 'XX')])], [1, 0, 0, 0], ['AS', '2S', '2S', '2C', '5S', '5S', '7S', '8S', '9S', '0S', 'JS'], 'KC')""", False),
         # INVALID attempt to play Phase 1 (as doesn't hold the necessary cards)
-        ("""submission.phazed_is_valid_play((3, (1, [['2S', '2S', '2C'], ['AS', '5S', '5S']])), 0, [(None, []), (None, []), (None, []), (None, [])], [(0, [(1, 'XX')])], [1, 0, 0, 0], ['KS', '2S', '2S', '2C', '5S', '5S', '7S', '8S', '9S', '0S', 'JS'], 'KC')""", False),
+        ("""submission.phazed_is_valid_play((3, (1, [['2S', '2S', '2C'], ['AS', '5S', '5S']])), 0, [(None, []), (None, []), (None, []), (None, [])], [(0, [(1, 'XX')])], [0, 0, 0, 0], ['KS', '2S', '2S', '2C', '5S', '5S', '7S', '8S', '9S', '0S', 'JS'], 'KC')""", False),
         # INVALID attempt to play Phase 2 (as actual cards are Phase 1)
         ("""submission.phazed_is_valid_play((3, (2, [['2S', '2S', '2C'], ['AS', '5S', '5S']])), 0, [(None, []), (None, []), (None, []), (None, [])], [(0, [(1, 'XX')])], [1, 0, 0, 0], ['KS', '2S', '2S', '2C', '5S', '5S', '7S', '8S', '9S', '0S', 'JS'], 'KC')""", False),
         # play Phase 2
